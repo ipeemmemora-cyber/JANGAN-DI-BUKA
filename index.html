@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Sayang</title>
 
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(to bottom, #ffb6c1, #ffc0cb);
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+      animation: fade 2s ease;
+    }
+
+    .foto{
+      width:250px;
+      height:250px;
+      border-radius:50%;
+      object-fit:cover;
+      border:6px solid white;
+      box-shadow:0 0 30px rgba(255,255,255,0.8);
+      animation: glow 2s infinite alternate;
+    }
+
+    h1{
+      margin-top:20px;
+      color:white;
+      font-size:35px;
+      text-shadow:2px 2px 8px black;
+    }
+
+    .btn{
+      margin-top:25px;
+      display:inline-block;
+      padding:15px 40px;
+      background:white;
+      color:#ff1493;
+      text-decoration:none;
+      border-radius:40px;
+      font-size:20px;
+      font-weight:bold;
+      transition:0.3s;
+      box-shadow:0 0 20px rgba(255,255,255,0.7);
+    }
+
+    .btn:hover{
+      transform:scale(1.1);
+      background:#ff1493;
+      color:white;
+    }
+
+    @keyframes glow{
+      from{
+        box-shadow:0 0 20px white;
+      }
+      to{
+        box-shadow:0 0 40px #ff1493;
+      }
+    }
+
+    @keyframes fade{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Ganti foto.jpg dengan foto pacar kamu -->
+    <img src="WhatsApp Image 2026-05-08 at 15.57.39.jpeg" class="foto">
+
+    <h1>Selamat Ulang Tahun Sayang ❤️</h1>
+
+    <a href="halam2.html" class="btn">Tekan Saya</a>
+
+  </div>
+
+</body>
+</html>
